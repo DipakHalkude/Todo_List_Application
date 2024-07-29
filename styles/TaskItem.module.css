@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Ensure consistent styling for all task items */
+.item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; /* Center all elements in the item */
+    position: relative;
+}
+
+/* Style for the item when completed */
+.item.completed {
+    background-color: #ffdddd; /* Light red background for completed tasks */
+}
+
+/* Hidden checkbox styles */
+.hiddenCheckbox {
+    display: none;
+}
+
+/* Style for the checkbox when the task is completed */
+.item.completed .checkbox {
+    background-color: #0070f3; /* Checkmark color */
+}
+
+/* Style for the checkbox itself */
+.checkbox {
+    accent-color: #0070f3; /* Checkbox color */
+}
+
+/* Style for the checkbox label */
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Button container styles */
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center buttons horizontally */
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Ensure button styles are preserved */
+.button {
+    padding: 6px 12px;
+    font-size: 12px;
+    background-color: #0070f3;
+    color: white;
+    border: 1px solid #005bb5;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure button hover styles are preserved */
+.button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
