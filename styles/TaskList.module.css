@@ -1,6 +1,6 @@
-/* styles/TaskList.module.css */
+/* Container for the list of tasks */
 .list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+  gap: 20px; /* Space between task items */
 }

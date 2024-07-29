@@ -1,77 +1,51 @@
-/* styles/TaskForm.module.css
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .input,
-  .textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #0070f3;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #005bb5;
-  }
-   */
-
-/* styles/TaskForm.module.css */
+/* Import Montserrat font for styling */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+/* Styles for the form container */
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background: #ffffff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    gap: 20px; /* Space between form elements */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    background: #ffffff; /* White background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
 }
 
+/* Styles for input and textarea elements */
 .input,
 .textarea {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 12px; /* Padding inside the input and textarea */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size for the text */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effects */
 }
 
+/* Styles for input and textarea when focused */
 .input:focus,
 .textarea:focus {
-    border-color: #0070f3;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2);
+    border-color: #0070f3; /* Blue border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2); /* Blue shadow around the element */
 }
 
+/* Styles for buttons */
 .button {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: #0070f3;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    font-family: 'Montserrat', sans-serif;
+    padding: 12px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #0070f3; /* Blue background color */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size for the text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    font-family: 'Montserrat', sans-serif; /* Font family */
 }
 
+/* Styles for the button on hover */
 .button:hover {
-    background-color: #005bb5;
-    transform: scale(1.05);
+    background-color: #005bb5; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly scale up the button */
 }

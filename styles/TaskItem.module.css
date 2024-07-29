@@ -1,32 +1,33 @@
+/* Import Montserrat font for styling */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-/* Ensure consistent styling for all task items */
+/* Style for individual task items */
 .item {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center; /* Center all elements in the item */
-    position: relative;
+    padding: 10px; /* Padding inside the item */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+    gap: 10px; /* Space between child elements */
+    align-items: center; /* Center all elements horizontally */
+    position: relative; /* Positioning context for child elements */
 }
 
-/* Style for the item when completed */
+/* Style for completed task items */
 .item.completed {
-    background-color: #ffdddd; /* Light red background for completed tasks */
+    background-color: #ffdddd; /* Light red background to indicate completion */
 }
 
-/* Hidden checkbox styles */
+/* Hide the checkbox element */
 .hiddenCheckbox {
-    display: none;
+    display: none; /* Hide checkbox */
 }
 
-/* Style for the checkbox when the task is completed */
+/* Style for checkbox when task is completed */
 .item.completed .checkbox {
-    background-color: #0070f3; /* Checkmark color */
+    background-color: #0070f3; /* Blue checkmark color */
 }
 
 /* Style for the checkbox itself */
@@ -34,40 +35,40 @@
     accent-color: #0070f3; /* Checkbox color */
 }
 
-/* Style for the checkbox label */
+/* Style for checkbox label and its children */
 .checkboxLabel {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+    gap: 5px; /* Space between checkbox and text */
 }
 
-/* Button container styles */
+/* Container for action buttons */
 .buttonContainer {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Use flexbox for layout */
+    gap: 10px; /* Space between buttons */
     justify-content: center; /* Center buttons horizontally */
-    width: 100%;
-    margin-top: 10px;
+    width: 100%; /* Full width of the container */
+    margin-top: 10px; /* Space above the button container */
 }
 
-/* Ensure button styles are preserved */
+/* Style for buttons */
 .button {
-    padding: 6px 12px;
-    font-size: 12px;
-    background-color: #0070f3;
-    color: white;
-    border: 1px solid #005bb5;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 6px 12px; /* Padding inside the button */
+    font-size: 12px; /* Font size */
+    background-color: #0070f3; /* Blue background color */
+    color: white; /* White text color */
+    border: 1px solid #005bb5; /* Darker blue border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    display: flex; /* Flexbox layout for centering text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
 }
 
-/* Ensure button hover styles are preserved */
+/* Button hover effects */
 .button:hover {
-    background-color: #005bb5;
-    transform: scale(1.05);
+    background-color: #005bb5; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly scale up the button */
 }
