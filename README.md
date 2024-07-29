@@ -1,68 +1,87 @@
-Todo List Application
-Overview
-The Todo List Application is a simple yet powerful task management tool built with Next.js. This application allows users to create, read, update, and delete tasks. It features server-side rendering (SSR) for enhanced performance and utilizes URL parameters to manage search queries and filters.
+# Todo List Application
 
-Features
-Task Management: Add, edit, and delete tasks.
-Search Functionality: Filter tasks based on search queries using URL parameters.
-Server-Side Rendering: Improve performance with SSR.
-Task Completion: Mark tasks as completed and toggle their status.
-Responsive Design: Optimized for both desktop and mobile devices.
-System Design
-Frontend
-React: The UI is built using React components, allowing for a dynamic and interactive user experience.
-Next.js: Utilized for server-side rendering, routing, and API routes.
-CSS Modules: Scoped styling for components to ensure clean and maintainable styles.
-Backend
-API Routes: Custom API routes in Next.js handle CRUD operations for tasks.
-File-based Storage: Tasks are stored in a tasks.json file, which is read and updated by API routes.
-Implementation
-File Structure
-pages/: Contains the application’s pages and API routes.
-index.js: Main page listing tasks and providing the UI for task management.
-api/tasks/index.js: Handles API requests for retrieving and adding tasks.
-api/tasks/[id].js: Manages task-specific operations (GET, PUT).
-components/: Contains reusable React components.
-TaskItem.js: Displays individual tasks with options to expand, toggle completion, and edit.
-TaskForm.js: Provides a form to add or edit tasks.
-public/: Contains static assets such as images and icons.
-styles/: Contains CSS modules for styling components.
-Setup and Installation
-Clone the Repository
+## Overview
 
-bash
-Copy code
-git clone https://github.com/YourUsername/YourRepositoryName.git
-cd YourRepositoryName
-Install Dependencies
+This is a Todo List application built with React and Next.js. It allows users to manage tasks, including creating, editing, and marking tasks as complete or incomplete. The application uses server-side rendering (SSR) for improved performance and includes search functionality.
 
-bash
-Copy code
-npm install
-Set Up Environment Variables
+## Features
 
-If you have any environment variables, create a .env.local file in the root directory and add them there.
+- **Task Management**: Add, edit, and delete tasks.
+- **Completion Status**: Mark tasks as complete or incomplete.
+- **Search Functionality**: Filter tasks using a search bar.
+- **Server-Side Rendering (SSR)**: For enhanced performance.
+- **Stylish Design**: Modern UI with responsive design.
 
-Run the Application Locally
+## Installation and Setup
 
-bash
-Copy code
-npm run dev
-Open your browser and go to http://localhost:3000 to view the application.
+To get started with the project, follow these steps:
 
-Build and Start for Production
+1. **Clone the Repository**:
 
-bash
-Copy code
-npm run build
-npm start
-This will build and start the application for production.
+    ```bash
+    git clone https://github.com/DipakHalkude/Todo_List_Application.git
+    ```
 
-Contribution
-Feel free to contribute to this project by submitting issues or pull requests. Ensure that any changes are well-documented and tested.
+2. **Navigate to the Project Directory**:
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+    ```bash
+    cd Todo_List_Application
+    ```
 
-Contact
-For any questions or issues, please contact Your Email.
+3. **Install Dependencies**:
+
+    Ensure you have [Node.js](https://nodejs.org/) installed. Then, run:
+
+    ```bash
+    npm install
+    ```
+
+4. **Run the Development Server**:
+
+    Start the Next.js development server with:
+
+    ```bash
+    npm run dev
+    ```
+
+    Open your browser and go to `http://localhost:3000` to view the application.
+
+5. **Build for Production**:
+
+    To create an optimized production build, run:
+
+    ```bash
+    npm run build
+    ```
+
+    You can then start the production server with:
+
+    ```bash
+    npm start
+    ```
+
+## File Structure
+
+- `pages/`: Contains the Next.js page components.
+- `components/`: Contains reusable React components.
+- `styles/`: Contains CSS and styling files.
+- `data/`: Contains sample data for tasks.
+
+## Usage
+
+- **Add a Task**: Use the form to add a new task to the list.
+- **Edit a Task**: Click "Edit" to modify an existing task.
+- **Mark as Done/Incompleted**: Click "Mark as Done" or "Mark as Incomplete" to toggle the task status.
+- **Search Tasks**: Use the search bar to filter tasks based on their title.
+
+## Contributing
+
+Feel free to open issues or submit pull requests to contribute to the project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please reach out to [Dipak Halkude](mailto:dipak@example.com).
